@@ -1,0 +1,18 @@
+{
+  "name": "tedyshop",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon --inspect ./src/server.js",
+    "watch":"node-sass -w ./src/resources/scss/ --output ./public/css/",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-handlebars": "^5.1.0",
+    "node-sass": "^4.14.1"
+  }
+}
