@@ -1,0 +1,8 @@
+Teddy Shop
+-	Mô hình chức năng: là trang web bán hàng, bao gồm đầy đủ các chức năng của một trang web bán hàng, trang Home bao gồm toàn bộ sản phẩm
+-	Trang Home bao gồm toàn bộ sản phẩm
+-	Các trang chi tiết sản phẩm: trong này bao gồm hình ảnh sản phẩm giá cả bình luận của những khách hàng đã mua
+-	Trang đăng ký, đăng nhập
+-	Giỏ hàng => Liên kết đến các trang thanh toán
+-	Trang tài khoản của khách hàng, theo dõi đơn hàng…
+-	Cơ sở dữ liệu sử dụng monggoDB
