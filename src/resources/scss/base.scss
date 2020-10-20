@@ -1,0 +1,24 @@
+html{
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+* {
+    box-sizing: inherit;
+}
+.grit
+{
+    width: 1200px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+.grit__full-width
+{
+    width: 100%;
+}
+.grit_row
+{
+    display: flex;
+    flex-wrap: wrap;
+}
