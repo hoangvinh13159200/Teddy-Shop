@@ -1,8 +1,16 @@
+
+
 <div class="mini_view" id="china">
-    <a href="TQBoKho.html" id="face_ad">
-        <img src="./img/BoKhoUotTeCayTuXuyen.jpg" alt="">
+	<a href="/producte/{{this.slug}}" id="{{this.ad}}">
+    	<img src="{{this.img}}" alt="">
     </a>
-    <a href="TQCaKho.html" id="norm_ad">
+	{{#each productes}}
+	<a href="/producte/{{this.slug}}" id="{{this.ad}}">
+    	<img src="{{this.img}}" alt="">
+    </a>
+	{{/each}}
+
+    {{!-- <a href="TQCaKho.html" id="norm_ad">
         <img src="./img/CaKhoQuangTay.jpg" alt="hauhau">
     </a>
     <a href="TQChanGa.html" id="norm_ad">
@@ -13,7 +21,7 @@
     </a>
     <a href="TQRauMuc.html" id="norm_ad">
         <img src="./img/RauMucCay.jpg" alt="#">
-    </a>
+    </a> --}}
     
     <p><span id="label">Từ Trung Quốc</span><br>
     Mùi vị đặc trưng<br>

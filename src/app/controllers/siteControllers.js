@@ -1,21 +1,20 @@
-const Product = require('../models/Product')
-const User = require('../models/User')
+const Producte = require('../models/Product')
+const Local = require('../models/Local')
+// const User = require('../models/User')
 class siteController{
-    user(req, res, next){
-        User.find({})
-            .then(users =>{
-                users : users
-                users = users.map(users =>{users.toString()})
-                res.render('users', {users})
-            })
-            .catch(error => next)
-    }
+
+
     home(req, res, next){
-        Product.find({})
-            .then(Products => res.render('home'))
-            .catch(error => next(error))
-    }
-    
+		Producte.find({})
+			.then((productes)=>{
+				productes: productes
+				productes = productes.map(productes => productes.toObject())
+				res.render('home', {productes})
+			}
+			)
+			.catch(next);
+	}
+	
 }
 
 module.exports = new siteController()

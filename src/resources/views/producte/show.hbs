@@ -1,0 +1,299 @@
+
+<head>
+	<link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/index.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap&subset=vietnamese" rel="stylesheet">
+    <link rel="stylesheet" href="/css/cacloai.css">
+</head>
+
+<div class="product_view">
+            <div class="product_view_img">
+                <img src="../../.{{producte.img}}" alt="">
+            </div>
+            <div class="product_view_info">
+                <div class="product_view-name">
+                    <h3>{{producte.name}} </h3>
+                </div>
+                <div class="sell_info">
+                    <div class="sell_info-star">
+                        <i class="fa fa-star"></i>
+                        <span> 4.5 </span>
+                    </div>
+                    <div class="danhgia">
+                        <p>2 Đánh giá</p>
+                    </div>
+                    <div class="sell_count">
+                        <p>Đã bán :{{producte.selled}}</p> 
+                    </div>
+                </div>
+                <div class="gia">
+                    <h2 id="money">{{producte.price}} đ</h2>
+                </div>
+                <div class="ship_info">
+                    <div class="ship_info-label">
+                        <p>Vận chuyển:</p>
+                    </div>
+                    <div class="ship_info-address">
+                        <div class="ship_info-addres-label">
+                            <p>Vận chuyển tới:</p>
+                        </div>
+                        <div class="adress">
+                            <div class="adress-tinh">
+                                <input type="text" placeholder="Huyện-Xã-Tên đường-Số nhà ">
+                            </div>
+                            <div class="adress-huyen">
+                                <select >
+                                                <option value="01">Thành phố Hà Nội</option>
+                                            
+                                                <option value="02">Tỉnh Hà Giang</option>
+                                            
+                                                <option value="04">Tỉnh Cao Bằng</option>
+                                            
+                                                <option value="06">Tỉnh Bắc Kạn</option>
+                                            
+                                                <option value="08">Tỉnh Tuyên Quang</option>
+                                            
+                                                <option value="10">Tỉnh Lào Cai</option>
+                                            
+                                                <option value="11">Tỉnh Điện Biên</option>
+                                            
+                                                <option value="12">Tỉnh Lai Châu</option>
+                                            
+                                                <option value="14">Tỉnh Sơn La</option>
+                                            
+                                                <option value="15">Tỉnh Yên Bái</option>
+                                            
+                                                <option value="17">Tỉnh Hoà Bình</option>
+                                            
+                                                <option value="19">Tỉnh Thái Nguyên</option>
+                                            
+                                                <option value="20">Tỉnh Lạng Sơn</option>
+                                            
+                                                <option value="22">Tỉnh Quảng Ninh</option>
+                                            
+                                                <option value="24">Tỉnh Bắc Giang</option>
+                                            
+                                                <option value="25">Tỉnh Phú Thọ</option>
+                                            
+                                                <option value="26">Tỉnh Vĩnh Phúc</option>
+                                            
+                                                <option value="27">Tỉnh Bắc Ninh</option>
+                                            
+                                                <option value="30">Tỉnh Hải Dương</option>
+                                            
+                                                <option value="31">Thành phố Hải Phòng</option>
+                                            
+                                                <option value="33">Tỉnh Hưng Yên</option>
+                                            
+                                                <option value="34">Tỉnh Thái Bình</option>
+                                            
+                                                <option value="35">Tỉnh Hà Nam</option>
+                                            
+                                                <option value="36">Tỉnh Nam Định</option>
+                                            
+                                                <option value="37">Tỉnh Ninh Bình</option>
+                                            
+                                                <option value="38">Tỉnh Thanh Hóa</option>
+                                            
+                                                <option value="40">Tỉnh Nghệ An</option>
+                                            
+                                                <option value="42">Tỉnh Hà Tĩnh</option>
+                                            
+                                                <option value="44">Tỉnh Quảng Bình</option>
+                                            
+                                                <option value="45">Tỉnh Quảng Trị</option>
+                                            
+                                                <option value="46">Tỉnh Thừa Thiên Huế</option>
+                                            
+                                                <option value="48">Thành phố Đà Nẵng</option>
+                                            
+                                                <option value="49">Tỉnh Quảng Nam</option>
+                                            
+                                                <option value="51">Tỉnh Quảng Ngãi</option>
+                                            
+                                                <option value="52">Tỉnh Bình Định</option>
+                                            
+                                                <option value="54">Tỉnh Phú Yên</option>
+                                            
+                                                <option value="56">Tỉnh Khánh Hòa</option>
+                                            
+                                                <option value="58">Tỉnh Ninh Thuận</option>
+                                            
+                                                <option value="60">Tỉnh Bình Thuận</option>
+                                            
+                                                <option value="62">Tỉnh Kon Tum</option>
+                                            
+                                                <option value="64">Tỉnh Gia Lai</option>
+                                            
+                                                <option value="66">Tỉnh Đắk Lắk</option>
+                                            
+                                                <option value="67">Tỉnh Đắk Nông</option>
+                                            
+                                                <option value="68">Tỉnh Lâm Đồng</option>
+                                            
+                                                <option value="70">Tỉnh Bình Phước</option>
+                                            
+                                                <option value="72">Tỉnh Tây Ninh</option>
+                                            
+                                                <option value="74">Tỉnh Bình Dương</option>
+                                            
+                                                <option value="75">Tỉnh Đồng Nai</option>
+                                            
+                                                <option value="77">Tỉnh Bà Rịa - Vũng Tàu</option>
+                                            
+                                                <option value="79">Thành phố Hồ Chí Minh</option>
+                                            
+                                                <option value="80">Tỉnh Long An</option>
+                                            
+                                                <option value="82">Tỉnh Tiền Giang</option>
+                                            
+                                                <option value="83">Tỉnh Bến Tre</option>
+                                            
+                                                <option value="84">Tỉnh Trà Vinh</option>
+                                            
+                                                <option value="86">Tỉnh Vĩnh Long</option>
+                                            
+                                                <option value="87">Tỉnh Đồng Tháp</option>
+                                            
+                                                <option value="89">Tỉnh An Giang</option>
+                                            
+                                                <option value="91">Tỉnh Kiên Giang</option>
+                                            
+                                                <option value="92">Thành phố Cần Thơ</option>
+                                            
+                                                <option value="93">Tỉnh Hậu Giang</option>
+                                            
+                                                <option value="94">Tỉnh Sóc Trăng</option>
+                                            
+                                                <option value="95">Tỉnh Bạc Liêu</option>
+                                                                            
+                                                <option value="96">Tỉnh Cà Mau</option>
+                                                
+                                </select>
+                            </div>
+                        </div>
+                        <div class="donvivanchuyen">
+                        </div>
+                    </div>
+
+                </div>
+                <div class="loai">
+                    <div class="loai_label">
+                        <p>Loại</p>
+                    </div>
+                    <div class="loai_picker">
+                        <div class="picker_item">
+                            <input type="radio" name="loaipicker" id="cabernet" >
+                            <label for="cabernet">Nhỏ</label><br>
+
+                        </div>
+                        <div class="picker_item">
+                            <input type="radio" name="loaipicker" id="chardonney" >
+                            <label for="cabernet">Vừa</label><br>
+
+                        </div>
+                        <div class="picker_item">
+                            <input type="radio" name="loaipicker" id="mix_chardonney_cabernet" >
+                            <label for="mix_chardonney_cabernet">Lớn</label><br>
+                        </div>
+                    </div>
+                </div>
+                <div class="soluong">
+                    <div class="soluong_label">
+                        <p>Số lượng</p>
+                    </div>
+                    <div class="soluong_picker">
+                        <input id="num" type="number" min="0">
+                    </div>
+                </div>
+                <div class="buy">
+                    <script src="./main.js"></script>
+                    <button onclick="themvaogiohang()"><i class="fa fa-cart-plus"> | </i> Thêm vào Giỏ hàng</button>
+                    <button id="buynow" onclick="muangay()">Mua Ngay</button>
+                </div>
+            </div>
+        </div>
+        <div class="description">
+            <div class="description_label">
+                <h2>MÔ TẢ SẢN PHẨM</h2>
+                <p>
+                    Bò khô ướt tế cay Tứ Xuyên nguyên chất  <br>
+                    Nhà sản xuất: Tuxuyen <br>
+                    Quy trình khép kín nghiêm ngặt <br>
+                    Hương vị cay ngọt tuyệt vời <br>
+                </p>
+                <h2>CHI TIẾT SẢN PHẨM</h2>
+                <table>
+                    <tr>
+                        <th>Danh mục </th>
+                        <td> <a href="index.html">Trang chủ</a> > <a href="TrungQuoc.html"> đồ ăn Trung Quốc</a></td>
+                    </tr>
+                    <tr>
+                        <th>Thương hiệu</th>
+                        <td>Train</td>
+                    </tr>
+                    <tr>
+                        <th>xuất xứ</th>
+                        <td>Trung Quốc</td>
+                    </tr>
+                    <tr>
+                        <th>Kho hàng </th>
+                        <td> 1030</td>
+                    </tr>
+                    <tr>
+                        <th>Gửi từ</th>
+                        <td> Bắc Giang</td>
+                    </tr>
+                </table>
+            </div>    
+        </div>
+        <div class="review">
+            <div class="review_label">
+                <h2>ĐÁNH GIÁ SẢN PHẨM</h2>
+            </div>
+            <div class="user_nhanxet">
+                <input style="margin-left:60px;margin-bottom: 20px;"type="text" placeholder="Thêm nhận xét của bạn">
+                
+            </div>
+            <div class="user_box">
+            <div class="user">
+                <div class="user_avatar">
+                    <img src="../../../../img/user1.jpg" alt="user1">
+                </div>
+                <div class="user_other">
+                    <div class="user_name">
+                        <h3>Phí Tơ Bắc Cơ</h3>
+                    </div>
+                    <div class="user_vote">
+                        <p>5<i class="fa fa-star"></i></p>
+                    </div>
+                    <div class="user_review">
+                        <p>Tuyệt vời chúc mừng năm mới</p>
+                        <p>06/01/2020 11:20</p>
+                        <hr>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="user">
+                <div class="user_avatar">
+                    <img src="../../../../img/Thainu.jpg" alt="user1">
+                </div>
+                <div class="user_other">
+                    <div class="user_name">
+                        <h3>Thái Nốt</h3>
+                    </div>
+                    <div class="user_vote">
+                        <p>5<i class="fa fa-star"></i></p>
+                    </div>
+                    <div class="user_review">
+                        <p>mlem mlem</p>
+                        <p>16/11/2019 13:29</p>
+                        <hr>
+                    </div>
+                </div>
+            </div>
+        	</div>
+        </div>
+</div>

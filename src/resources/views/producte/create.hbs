@@ -1,0 +1,39 @@
+<head>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<style>
+		.header {
+ 			 display: none; }
+
+		.footer {
+  			display: none; }
+	</style>
+</head>
+
+<div class="mt-4">
+    <h3>Thêm sản phẩm</h3>
+
+    <form method="POST" action="/producte/store">
+        <div class="form-group">
+            <label for="name">Tên sản phẩm</label>
+            <input type="text" class="form-control" id="name" name="name">
+        </div>
+        <div class="form-group">
+            <label for="img">Link ảnh</label>
+            <input type="text" class="form-control" id="img" name="img">
+        </div>
+        <div class="form-group">
+            <label for="price">Giá</label>
+            <input type="text" class="form-control" id="price" name="price">
+        </div>
+        <div class="form-group">
+            <label for="ad">Nhãn</label>
+            <input type="text" class="form-control" id="ad" name="ad">
+        </div>
+		<div class="form-group">
+            <label for="slug">Slug</label>
+            <input type="text" class="form-control" id="slug" name="slug">
+        </div>
+        
+        <button type="submit" class="btn btn-primary">Thêm sản phẩm</button>
+    </form>
+</div>
