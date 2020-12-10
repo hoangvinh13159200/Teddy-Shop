@@ -1,0 +1,32 @@
+<head>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<style>
+		.header {
+ 			 display: none; }
+
+		.footer {
+  			display: none; }
+	</style>
+</head>
+
+<div class="mt-4">
+    <h3>Thêm nhận xét</h3>
+
+    <form method="POST" action="/comment">
+        <div class="form-group">
+            <label for="user">Tên hiển thị:</label>
+            <input type="text" class="form-control" id="user" name="user">
+        </div>
+        <div class="form-group">
+            <label for="text">Nhận xét:</label>
+            <input type="text" class="form-control" id="text" name="text">
+        </div>
+        <div class="form-group">
+            <label for="sao">Số sao:</label>
+            <input type="sao" class="form-control" id="sao" name="sao">
+        </div>
+        <a  href="/">
+            <button type="submit" class="btn btn-primary" >Thêm nhận xét</button>
+        </a>
+    </form>
+</div>

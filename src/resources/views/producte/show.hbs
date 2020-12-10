@@ -24,7 +24,7 @@
                         <p>2 Đánh giá</p>
                     </div>
                     <div class="sell_count">
-                        <p>Đã bán :{{producte.selled}}</p> 
+                        <p>Hiện có :{{producte.selled}}</p> 
                     </div>
                 </div>
                 <div class="gia">
@@ -218,10 +218,11 @@
             <div class="description_label">
                 <h2>MÔ TẢ SẢN PHẨM</h2>
                 <p>
-                    Bò khô ướt tế cay Tứ Xuyên nguyên chất  <br>
+                    {{!-- Bò khô ướt tế cay Tứ Xuyên nguyên chất  <br>
                     Nhà sản xuất: Tuxuyen <br>
                     Quy trình khép kín nghiêm ngặt <br>
-                    Hương vị cay ngọt tuyệt vời <br>
+                    Hương vị cay ngọt tuyệt vời <br> --}}
+                    {{producte.description}}
                 </p>
                 <h2>CHI TIẾT SẢN PHẨM</h2>
                 <table>
@@ -234,8 +235,8 @@
                         <td>Train</td>
                     </tr>
                     <tr>
-                        <th>xuất xứ</th>
-                        <td>Trung Quốc</td>
+                        <th>Xuất xứ</th>
+                        <td>{{producte.origin}}</td>
                     </tr>
                     <tr>
                         <th>Kho hàng </th>
@@ -250,11 +251,9 @@
         </div>
         <div class="review">
             <div class="review_label">
-                <h2>ĐÁNH GIÁ SẢN PHẨM</h2>
+                <a href="/comment"><h2>ĐÁNH GIÁ SẢN PHẨM</h2></a>
             </div>
-            <div class="user_nhanxet">
-                <input style="margin-left:60px;margin-bottom: 20px;"type="text" placeholder="Thêm nhận xét của bạn">
-                
+            <div class="user_nhanxet">            
             </div>
             <div class="user_box">
             <div class="user">
@@ -263,36 +262,18 @@
                 </div>
                 <div class="user_other">
                     <div class="user_name">
-                        <h3>Phí Tơ Bắc Cơ</h3>
+                        <h3>{{producte.user}}</h3>
                     </div>
                     <div class="user_vote">
-                        <p>5<i class="fa fa-star"></i></p>
+                        <p>{{producte.sao}}<i class="fa fa-star"></i></p>
                     </div>
                     <div class="user_review">
-                        <p>Tuyệt vời chúc mừng năm mới</p>
-                        <p>06/01/2020 11:20</p>
+                        <p>{{producte.text}}</p>
+                        <p>{{producte.createdAt}}</p>
                         <hr>
                     </div>
                 </div>
             </div>
-            
-            <div class="user">
-                <div class="user_avatar">
-                    <img src="../../../../img/Thainu.jpg" alt="user1">
-                </div>
-                <div class="user_other">
-                    <div class="user_name">
-                        <h3>Thái Nốt</h3>
-                    </div>
-                    <div class="user_vote">
-                        <p>5<i class="fa fa-star"></i></p>
-                    </div>
-                    <div class="user_review">
-                        <p>mlem mlem</p>
-                        <p>16/11/2019 13:29</p>
-                        <hr>
-                    </div>
-                </div>
             </div>
         	</div>
         </div>

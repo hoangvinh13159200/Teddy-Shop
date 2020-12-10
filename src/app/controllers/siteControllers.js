@@ -1,5 +1,4 @@
 const Producte = require('../models/Product')
-const Local = require('../models/Local')
 // const User = require('../models/User')
 class siteController{
 

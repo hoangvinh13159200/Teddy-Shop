@@ -24,7 +24,7 @@ class producteController {
 			const producte = new Producte(req.body);
 			producte
 				.save()
-				// .then(() => res.redirect('/me/stored/courses'))
+				.then(() => res.redirect('/'))
 				.catch((error) => {});
 		}
 }
